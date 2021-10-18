@@ -1,1 +1,1 @@
-# https://yeleeruales.github
+# https://yeleeruales.github.io
