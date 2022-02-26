@@ -1,1 +1,1 @@
-Link:  https://yeleeruales.github.i
+Link:  https://yeleeruales.github.io
