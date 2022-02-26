@@ -1,514 +1,367 @@
 <!DOCTYPE html>
-    <html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <title>Gabrielle Lee Ruales</title>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <style>
-            body, h1,h2,h3,h4,h5,h6                   { font-family: "Montserrat", sans-serif; }
-            .w3-row-padding img                       { margin-bottom: 12px; }
-            .w3-sidebar                               { width: 120px; background: #222; } /* Set the width of the sidebar to 120px */
-            #main                                     { margin-left: 120px } /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-            @media only screen and (max-width: 600px) { #main { margin-left: 0 } } /* Remove margins from "page content" on small screens */
-        </style>
-        <body class="w3-black">
-            <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center"> <!-- Icon bar (sidebar - hidden on small screens) -->
-                <img src="images/ruales.jpg" style="width:100%"> <!-- Avatar image in top left corner -->
-                
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black" style="text-decoration: none;">
-                    <i class="fa fa-home w3-xxlarge"></i>
-                    <p>HOME</p>
-                </a>
-                <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration: none;">
-                    <i class="fa fa-briefcase w3-xxlarge"></i>
-                    <p>PROJECTS</p>
-                </a>
-                <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration: none;">
-                    <i class="fa fa-code w3-xxlarge"></i>
-                    <p>SKILLS</p>
-                </a>
-                <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black" style="text-decoration: none;">
-                    <i class="fa fa-envelope w3-xxlarge"></i>
-                    <p>CONTACT</p>
-                </a>
-            </nav>
-
-            <!-- Navbar on small screens (Hidden on medium and large screens) -->
-            <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-                <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-                    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-                    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-                    <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
-                    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <link href="assets/css/variables.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <!--
+            +------------------------------------------------------------------------------+
+            | Template Name: HeroBiz - v2.1.0                                              |
+            | Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/ |
+            | Author: BootstrapMade.com                                                    |
+            | License: https://bootstrapmade.com/license/                                  |
+            +------------------------------------------------------------------------------+
+        -->
+    </head>
+    <body>
+        <header id="header" class="header fixed-top" data-scrollto-offset="0">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0"><h1>GLVR<span>.</span></h1></a>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto" href="">Home</a></li>
+                        <li><a class="nav-link scrollto" href="index.html#seminars">Seminars Attended</a></li>
+                        <li><a class="nav-link scrollto" href="index.html#work">Work Experience</a></li>
+                        <li><a class="nav-link scrollto" href="index.html#projects">Projects</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle d-none"></i>
+                </nav>
+                 <a class="btn-getstarted scrollto" href="index.html">Get Started</a>
+            </div>
+        </header>
+        <section id="hero-static" class="hero-static d-flex align-items-center">
+            <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+                <h2>I am <span>Gabrielle Lee Ruales</span></h2>
+                <p>PHP Programmer since 2018</p>
+            </div>
+        </section>
+        <main id="main">
+            <section id="featured-services" class="featured-services">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out">
+                            <div class="service-item position-relative">
+                                <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+                                <h4><a href="" class="stretched-link">2004-2010</a></h4>
+                                <p>Elementary<br>Queen Anne School of Dasmariñas</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+                            <div class="service-item position-relative">
+                                <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+                                <h4><a href="" class="stretched-link">2010-2014</a></h4>
+                                <p>Secondary<br>Queen Anne School of Dasmariñas</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+                            <div class="service-item position-relative">
+                                <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+                                <h4><a href="" class="stretched-link">2014-2018</a></h4>
+                                <p>College<br>Cavite State University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="seminars" class="services">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header"><h2>Seminars Attended</h2></div>
+                    <div class="row gy-5">
+                        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="service-item">
+                                <div class="img"><img src="assets/img/big-data-analytics.jpg" class="img-fluid" alt=""></div>
+                                <div class="details position-relative">
+                                    <div class="icon"><i class="bi bi-activity"></i></div>
+                                    <a href="#" class="stretched-link"><h3>Big Data Analytics</h3></a>
+                                    <p>October 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="service-item">
+                                <div class="img"><img src="assets/img/adobe.jpg" class="img-fluid" alt=""></div>
+                                <div class="details position-relative">
+                                    <div class="icon"><i class="bi bi-easel"></i></div>
+                                    <a href="#" class="stretched-link"><h3>Adobe Creative Cloud in Business</h3></a>
+                                    <p>October 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="service-item">
+                                <div class="img"><img src="assets/img/technopreneurship.jpg" class="img-fluid" alt=""></div>
+                                <div class="details position-relative">
+                                    <div class="icon"><i class="bi bi-broadcast"></i></div>
+                                    <a href="#" class="stretched-link"><h3>Technopreneurship</h3></a>
+                                    <p>October 2017</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="service-item">
+                                <div class="img"><img src="assets/img/eaci.jpg" class="img-fluid" alt=""></div>
+                                <div class="details position-relative">
+                                    <div class="icon"><i class="bi bi-bounding-box-circles"></i></div>
+                                    <a href="#" class="stretched-link"><h3>Entrepreneurial and Career Innovation</h3></a>
+                                    <p>October 2017</p>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="service-item">
+                                <div class="img"><img src="assets/img/cyber.jpg" class="img-fluid" alt=""></div>
+                                <div class="details position-relative">
+                                    <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                                    <a href="#" class="stretched-link"><h3>Cyber Safety and Data Privacy Compliance Form</h3></a>
+                                    <p>February 2020</p>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+                            <div class="service-item">
+                                <div class="img"><img src="assets/img/google.jpg" class="img-fluid" alt=""></div>
+                                <div class="details position-relative">
+                                    <div class="icon"><i class="bi bi-chat-square-text"></i></div>
+                                    <a href="#" class="stretched-link"><h3>Google Workspace Admin Console Training</h3></a>
+                                    <p>April 2021</p>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work" class="pricing">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header"><h2>Work Experience</h2></div>
+                    <div class="row gy-4">
+                        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="pricing-item featured">
+                                <div class="pricing-header">
+                                    <h3>FPG Insurance Co., Inc</h3>
+                                    <h4><span>September 2018 - March 2020</span></h4>
+                                </div>
+                                <ul>
+                                    <li><i class="bi bi-dot"></i> <span>Able to publish a system for handling bulk policies. The system is generating excel and PDF report. The user can either encode or upload. Planned to be implemented in FPG Indonesia and FPG Thailand</span></li>
+                                    <li><i class="bi bi-dot"></i> <span>Able to create systems using MYSQLi and MSSQL</span></li>
+                                    <li><i class="bi bi-dot"></i> <span>Created basic configuration of MVC framework</span></li>
+                                    <li><i class="bi bi-dot"></i> <span>Created a web application that uses API to retrieve and insert a data</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="pricing-item featured">
+                                <div class="pricing-header">
+                                    <h3>Agricultural Credit Policy Council</h3>
+                                    <h4><span>October 2020 - December 2021</span></h4>
+                                </div>
+                                <ul>
+                                    <li><i class="bi bi-dot"></i> <span>Document Download Tracking System</span></li>
+                                    <li><i class="bi bi-dot"></i> <span>AgriCredit Electronic Portal Dashboard</span></li>
+                                    <li><i class="bi bi-dot"></i> <span>AgriCredit Client E-Signup System (ACCESS)</span></li>
+                                    <li><i class="bi bi-dot"></i> <span>ACCESS-OWWA website (company website connected to Overseas Workers Welfare Administration)</span></li>
+                                    <li><i class="bi bi-dot"></i> <span>Human Resources Information System</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="pricing-item featured">
+                                <div class="pricing-header">
+                                    <h3>Profiles Asia<br>Pacific</h3>
+                                    <h4><span>November 2021 - Present</span></h4>
+                                </div>
+                                <ul>
+                                    <li><i class="bi bi-dot"></i> <span>Created function for allowing specific special characters using JavaScript</span></li>
+                                    <li><i class="bi bi-dot"></i> <span>Updated modules in the legacy system then converted the source code from PHP version 5.6 to 7.4</span></li>
+                                    <li><i class="bi bi-dot"></i> <span>Created REST API using Yii2 Advanced Framework</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="clients" class="clients">
+                    <div class="container" data-aos="zoom-out">
+                        <div class="clients-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide"><img src="assets/img/fpg.png" class="img-fluid" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/img/acpc.png" class="img-fluid" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/img/pap.png" class="img-fluid" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="recent-blog-posts" data-aos="fade-up">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-header"><h2>Projects</h2></div>
+                    <div class="row">
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/biotechnology-3.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2016</span>
+                                    <span class="post-author"> / Biotechnology</span>
+                                </div>
+                                <a href="biotechnology.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/onepiece-1.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2017</span>
+                                    <span class="post-author"> / One Piece Page</span>
+                                </div>
+                                <a href="onepiece.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/ecommerce-1.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2017</span>
+                                    <span class="post-author"> / E-commerce</span>
+                                </div>
+                                <a href="ecommerce.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/misoiees-1.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2018</span>
+                                    <span class="post-author"> / MIS of Indang East Elementary School</span>
+                                </div>
+                                <a href="misoiees.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/frontend-2.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2018</span>
+                                    <span class="post-author"> / Front-end System</span>
+                                </div>
+                                <a href="frontend.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/aonspsreport-1.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2019</span>
+                                    <span class="post-author"> / AON SPS Report</span>
+                                </div>
+                                <a href="aonspsreport.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/ddts-1.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2020</span>
+                                    <span class="post-author"> / Document Download Tracking System</span>
+                                </div>
+                                <a href="ddts.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/aceportal-1.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2020</span>
+                                    <span class="post-author"> / ACE Portal Dashboard</span>
+                                </div>
+                                <a href="aceportal.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/access-9.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2021</span>
+                                    <span class="post-author"> / Agri-Credit Client E-signup System</span>
+                                </div>
+                                <a href="access.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/owwaaccess-1.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2021</span>
+                                    <span class="post-author"> / Agri-Credit Client E-signup System-OWWA</span>
+                                </div>
+                                <a href="owwaaccess.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/hris-1.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2021</span>
+                                    <span class="post-author"> / Human Resources Information System</span>
+                                </div>
+                                <a href="hris.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                            <div class="post-box">
+                                <div class="post-img"><img src="assets/img/animecss-1.png" class="img-fluid" alt=""></div>
+                                <div class="meta">
+                                    <span class="post-date">2021</span>
+                                    <span class="post-author"> / Anime Characters Created Using Pure CSS</span>
+                                </div>
+                                <a href="animecss.html" class="readmore stretched-link"><span>View Images</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="footer">
+            <div class="footer-legal text-center">
+                <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <div class="copyright">&copy; Copyright <strong><span>HeroBiz</span></strong>. All Rights Reserved</div>
+                        <!-- All the links in the footer should remain intact. -->
+                        <!-- You can delete the links only if you purchased the pro version. -->
+                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+                        <div class="credits">Designed by <a target="_blank" href="https://bootstrapmade.com/">BootstrapMade</a></div>
+                    </div>
+                    <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+                        <a target="_blank" href="https://facebook.com/yeleeruales" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a target="_blank" href="https://instagram.com/yeleeruales" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a target="_blank" href="https://linkedin.com/in/yeleeruales" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" title="09265123097" class="linkedin"><i class="bi bi-telephone-fill"></i></a>
+                        <a target="_blank" href="mailto:yeleeruales@gmail.com" class="linkedin"><i class="bi bi-envelope-paper-fill"></i></a>
+                    </div>
                 </div>
             </div>
-
-            <!-- Page Content -->
-            <div class="w3-padding-large" id="main">
-            
-                <!-- Header/Home -->
-                <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-                  <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Gabrielle Lee Ruales</h1>
-
-                  <p>Computer Programmer II</p>
-
-                  <!-- <img src="images/ruales.jpg" alt="boy" class="w3-image" width="472" height="588"> -->
-                </header>
-
-                <!-- About Section -->
-                <div class="w3-content w3-justify w3-text-grey w3-padding-64">
-                    <h2 class="w3-text-light-grey">Gabrielle Lee Ruales</h2>
-                    
-                    <hr style="width:200px" class="w3-opacity">
-                    
-                    <p>I am a Computer Programmer since 2018, currently studying AngularJS as my JavaScript Framework and SASS as my preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets. I've known HTML since I was in my third year in high school and PHP in my third year in college.</p>
-        
-    				<h3 class="w3-padding-16 w3-text-light-grey">Education</h3>
-
-				    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-				      	<div class="w3-quarter w3-section"><span class="w3-small">Year<br>Educational Attainment<br>School</span></div>
-				      	<div class="w3-quarter w3-section"><span class="w3-small">2004-2010<br>Elementary <br> Queen Anne School of Dasmariñas</span></div>
-      					<div class="w3-quarter w3-section"><span class="w3-small">2010-2014<br>Secondary <br> Queen Anne School of Dasmariñas</span></div>
-      					<div class="w3-quarter w3-section"><span class="w3-small">2014/2018<br>College <br> Cavite State University</span></div>
-    				</div>
-
-    			<!-- <button class="w3-button w3-light-grey w3-padding-large w3-section"><a href="#" style="text-decoration: none;"><i class="fa fa-download"></i> Download Resume</button></a> -->
-    
-			    <h3 class="w3-padding-16 w3-text-light-grey" id="projects">My Projects since 2017</h3>
-			        <div class="container"  style="width: 88%;">
-			            <h2>Biotechnology</h2>  
-			                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel1" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel1" data-slide-to="2"></li>
-			                        <li data-target="#myCarousel1" data-slide-to="3"></li>
-			                        <li data-target="#myCarousel1" data-slide-to="4"></li>
-			                        <li data-target="#myCarousel1" data-slide-to="5"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/biotechnology-1.PNG" alt="biotechnology_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/biotechnology-2.PNG" alt="biotechnology_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/biotechnology-3.PNG" alt="biotechnology_3" style="width:100%;"></div>
-			                        <div class="item"><img src="images/biotechnology-4.PNG" alt="biotechnology_4" style="width:100%;"></div>
-			                        <div class="item"><img src="images/biotechnology-5.PNG" alt="biotechnology_5" style="width:100%;"></div>
-			                        <div class="item"><img src="images/biotechnology-6.PNG" alt="biotechnology_6" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-			            <h2>One Piece Page</h2>  
-			                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-			                        <li data-target="#myCarousel2" data-slide-to="3"></li>
-			                        <li data-target="#myCarousel2" data-slide-to="4"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/onepiece-1.PNG" alt="onepiece_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/onepiece-2.PNG" alt="onepiece_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/onepiece-3.PNG" alt="onepiece_3" style="width:100%;"></div>
-			                        <div class="item"><img src="images/onepiece-4.PNG" alt="onepiece_4" style="width:100%;"></div>
-			                        <div class="item"><img src="images/onepiece-5.PNG" alt="onepiece_5" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-			            <h2>E-Commerce</h2>  
-			                <div id="myCarousel3" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-			                        <li data-target="#myCarousel3" data-slide-to="3"></li>
-			                        <li data-target="#myCarousel3" data-slide-to="4"></li>
-			                        <li data-target="#myCarousel3" data-slide-to="5"></li>
-			                        <li data-target="#myCarousel3" data-slide-to="6"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/ecommerce-1.png" alt="e_commerce_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ecommerce-2.PNG" alt="e_commerce_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ecommerce-3.PNG" alt="e_commerce_3" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ecommerce-4.PNG" alt="e_commerce_4" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ecommerce-5.PNG" alt="e_commerce_5" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ecommerce-6.png" alt="e_commerce_6" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ecommerce-7.PNG" alt="e_commerce_7" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel3" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-			            <h2>Management Information System of Indang East Elementary School</h2>  
-			                <div id="myCarousel4" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel4" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel4" data-slide-to="2"></li>
-			                        <li data-target="#myCarousel4" data-slide-to="3"></li>
-			                        <li data-target="#myCarousel4" data-slide-to="4"></li>
-			                        <li data-target="#myCarousel4" data-slide-to="5"></li>
-			                        <li data-target="#myCarousel4" data-slide-to="6"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/misoiees-1.png" alt="misoiees_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/misoiees-2.png" alt="misoiees_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/misoiees-3.png" alt="misoiees_3" style="width:100%;"></div>
-			                        <div class="item"><img src="images/misoiees-4.png" alt="misoiees_4" style="width:100%;"></div>
-			                        <div class="item"><img src="images/misoiees-5.png" alt="misoiees_5" style="width:100%;"></div>
-			                        <div class="item"><img src="images/misoiees-6.png" alt="misoiees_6" style="width:100%;"></div>
-			                        <div class="item"><img src="images/misoiees-7.png" alt="misoiees_7" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel4" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel4" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-			            <h2>Front-end System (Motor, Marine, Property, Personal Accident) </h2>  
-			                <div id="myCarousel5" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel5" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel5" data-slide-to="2"></li>
-			                        <li data-target="#myCarousel5" data-slide-to="3"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/frontend-1.png" alt="frontend_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/frontend-2.png" alt="frontend_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/frontend-3.png" alt="frontend_3" style="width:100%;"></div>
-			                        <div class="item"><img src="images/frontend-4.png" alt="frontend_4" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel5" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel5" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-			            <h2>AON SPS Report</h2>  
-			                <div id="myCarousel6" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel6" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel6" data-slide-to="2"></li>
-			                        <li data-target="#myCarousel6" data-slide-to="3"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/aonspsreport-1.PNG" alt="aonspsreport_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/aonspsreport-2.PNG" alt="aonspsreport_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/aonspsreport-3.PNG" alt="aonspsreport_3" style="width:100%;"></div>
-			                        <div class="item"><img src="images/aonspsreport-4.PNG" alt="aonspsreport_4" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel6" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel6" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-		                <h2>Document Download Tracking System</h2><!-- Agri-Credit Client E-signup System -->
-			                <div id="myCarousel7" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel7" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel7" data-slide-to="2"></li>
-			                        <li data-target="#myCarousel7" data-slide-to="3"></li>
-			                        <li data-target="#myCarousel7" data-slide-to="4"></li>
-			                        <li data-target="#myCarousel7" data-slide-to="5"></li>
-			                        <li data-target="#myCarousel7" data-slide-to="6"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/ddts-1.PNG" alt="aonspsreport_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ddts-2.PNG" alt="aonspsreport_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ddts-3.PNG" alt="aonspsreport_3" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ddts-4.PNG" alt="aonspsreport_4" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ddts-5.PNG" alt="aonspsreport_5" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ddts-6.PNG" alt="aonspsreport_6" style="width:100%;"></div>
-			                        <div class="item"><img src="images/ddts-7.PNG" alt="aonspsreport_7" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel7" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel7" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-		               	<h2>Agri-Credit Client E-signup System</h2>
-			                <div id="myCarousel8" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel8" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="2"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="3"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="4"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="5"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="6"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="7"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="8"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="9"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="10"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="11"></li>
-			                        <li data-target="#myCarousel8" data-slide-to="12"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/access-1.PNG" alt="access_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-2.PNG" alt="access_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-3.PNG" alt="access_3" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-4.PNG" alt="access_4" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-5.PNG" alt="access_5" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-6.PNG" alt="access_6" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-7.PNG" alt="access_7" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-8.PNG" alt="access_8" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-9.PNG" alt="access_9" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-10.PNG" alt="access_10" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-11.PNG" alt="access_11" style="width:100%;"></div>
-			                        <div class="item"><img src="images/access-12.PNG" alt="access_12" style="width:100%;"></div>
-						<div class="item"><img src="images/access-14.PNG" alt="access_14" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel8" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel8" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-			            <h2>ACE Portal Dashboard</h2>  
-			                <div id="myCarousel9" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel9" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel9" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel9" data-slide-to="2"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/aceportal-1.PNG" alt="aceportal_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/aceportal-2.PNG" alt="aceportal_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/aceportal-3.PNG" alt="aceportal_3" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel9" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel9" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-			            <h2>Agri-Credit Client E-signup System-OWWA</h2>  
-			                <div id="myCarousel10" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel10" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel10" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel10" data-slide-to="2"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/owwaaccess-1.PNG" alt="owwaaccess_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/owwaaccess-2.PNG" alt="owwaaccess_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/owwaaccess-3.PNG" alt="owwaaccess_3" style="width:100%;"></div
-			                        >
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel10" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel10" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-
-			            <h2>Anime Characters Created Using Pure CSS</h2>  
-			                <div id="myCarousel11" class="carousel slide" data-ride="carousel">
-			                    <ol class="carousel-indicators">
-			                        <li data-target="#myCarousel11" data-slide-to="0" class="active"></li>
-			                        <li data-target="#myCarousel11" data-slide-to="1"></li>
-			                        <li data-target="#myCarousel11" data-slide-to="2"></li>
-			                        <li data-target="#myCarousel11" data-slide-to="3"></li>
-			                        <li data-target="#myCarousel11" data-slide-to="4"></li>
-			                    </ol>
-
-			                    <!-- Wrapper for slides -->
-			                    <div class="carousel-inner">
-			                        <div class="item active"><img src="images/animecss-1.png" alt="animecss_1" style="width:100%;"></div>
-			                        <div class="item"><img src="images/animecss-2.PNG" alt="animecss_2" style="width:100%;"></div>
-			                        <div class="item"><img src="images/animecss-3.PNG" alt="animecss_3" style="width:100%;"></div
-			                        >
-			                        <div class="item"><img src="images/animecss-4.PNG" alt="animecss_4" style="width:100%;"></div>
-			                        <div class="item"><img src="images/animecss-5.PNG" alt="animecss_5" style="width:100%;"></div>
-			                    </div>
-
-			                    <!-- Left and right controls -->
-			                    <a class="left carousel-control" href="#myCarousel11" data-slide="prev">
-			                        <span class="glyphicon glyphicon-chevron-left"></span>
-			                        <span class="sr-only">Previous</span>
-			                    </a>
-			                    <a class="right carousel-control" href="#myCarousel11" data-slide="next">
-			                        <span class="glyphicon glyphicon-chevron-right"></span>
-			                        <span class="sr-only">Next</span>
-			                    </a>
-			                </div>
-        			</div>
-
-        			<h3 class="w3-padding-16 w3-text-light-grey" id="skills">My Skills</h3>
-                    
-		            <p class="w3-wide">AngularJS</p>
-		            <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:30%"></div></div><br>
-
-		            <p class="w3-wide">Syntactically Awesome Style Sheets</p>
-		            <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:30%"></div></div><br>
-
-		            <p class="w3-wide">JavaScript</p>
-		            <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:60%"></div></div><br>
-
-		            <p class="w3-wide">MVC Framework</p>
-		            <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:65%"></div></div><br>
-		            
-		            <p class="w3-wide">Cascading Style Sheets</p>
-		            <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:80%"></div></div><br>
-		            
-		            <p class="w3-wide">Hypertext Preprocessor</p>
-		            <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:80%"></div></div><br>
-
-		            <p class="w3-wide">Bootstrap</p>
-		            <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:80%"></div></div><br>
-
-		            <p class="w3-wide">MySQL/MSSQL</p>
-		            <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:85%"></div></div><br>
-
-		            <p class="w3-wide">HyperText Mark-up Language</p>
-		            <div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:90%"></div></div><br>
-
-		    		<!-- Grid for pricing tables -->
-					<h3 class="w3-padding-16 w3-text-light-grey">Seminars Attended</h3>
-	    			<div class="w3-row-padding" style="margin:0 -16px">
-	      				<div class="w3-half w3-margin-bottom">
-	        				<ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-						        <li class="w3-dark-grey w3-xlarge w3-padding-32">Date</li>
-						        <li class="w3-padding-16">October 2017</li>
-						        <li class="w3-padding-16">October 2017</li>
-						        <li class="w3-padding-16">October 2017</li>
-						        <li class="w3-padding-16">October 2017</li>
-						        <li class="w3-padding-16">February 2020</li>
-							<li class="w3-padding-16">April 2021</li>
-	        				</ul>
-	      				</div>
-
-	      				<div class="w3-half">
-					        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-					        	<li class="w3-dark-grey w3-xlarge w3-padding-32">Title</li>
-					          	<li class="w3-padding-16">Big Data Analytics</li>
-					          	<li class="w3-padding-16">Technopreneurship</li>
-					          	<li class="w3-padding-16">Adobe Creative Cloud in Business</li>
-					          	<li class="w3-padding-16">Entrepreneurial and Career Innovation</li>
-					          	<li class="w3-padding-16">Cyber Safety and Data Privacy Compliance Form</li>
-							<li class="w3-padding-16">Google Workspace Admin Console Training</li>
-					        </ul>
-	      				</div>
-	    			</div>
-
-	        		<!-- Contact Section -->
-			        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-			            <h2 class="w3-text-light-grey">Contact Me</h2>
-			                <hr style="width:200px" class="w3-opacity">
-
-			            <div class="w3-section">
-			                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Dasmariñas, Cavite</p>
-			                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 0926 512 3097</p>
-			                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: yeleeruales@gmail.com</p>
-			            </div><br>
-
-			            <p>Let's get in touch. Send me a message by clicking this link: <a href="mailto:yeleeruales@gmail.com">Gabrielle Lee Ruales</a></p>
-			        </div>
-	  
-			        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-		            	<p class="w3-medium">You can also reach me in my social media accounts below:</p>
-			            <a target="_blank" href="https://facebook.com/yeleeruales"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-			            <a target="_blank" href="https://instagram.com/yeleeruales"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-			            <a target="_blank" href="https://linkedin.com/in/yeleeruales"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-			        </footer> 
-            </div>
-        </body>
-    </html>
+        </footer>
+        <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <div id="preloader"></div>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
